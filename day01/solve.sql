@@ -14,7 +14,7 @@ SELECT
         WHEN 'L' THEN 3
     END AS rotation
 FROM
-    json_each('["' || replace(replace(trim(readfile('./default')), char(10), ''), ', ', '", "') || '"]');
+    json_each('["' || replace(replace(trim(readfile('./input')), char(10), ''), ', ', '", "') || '"]');
 
 
 CREATE VIEW deltas

@@ -7,7 +7,7 @@ INSERT INTO
 SELECT
     value
 FROM
-    json_each('["' || replace(trim(readfile('./default'), char(10)), char(10), '", "') || '"]');
+    json_each('["' || replace(trim(readfile('./input'), char(10)), char(10), '", "') || '"]');
 
 
 .header off
