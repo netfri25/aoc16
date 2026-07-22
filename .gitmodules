@@ -1,0 +1,3 @@
+[submodule "day05/sqlite-md5"]
+	path = day05/sqlite-md5
+	url = https://github.com/moisseev/sqlite-md5
